@@ -66,7 +66,7 @@ describe('Trek-Characters-be routes', () => {
 
   });
 
-  it('updates a recipe by id', async() => {
+  it('updates a character by id', async() => {
     const character = await Character.insert({
       name: 'Johnson',
       affiliation: 'Starfleet',
