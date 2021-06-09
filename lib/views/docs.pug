@@ -1,7 +1,8 @@
 doctype html
 html
   head 
-    style
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    style(link href="https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap" rel="stylesheet")
       include ./style.css
     title= title
   body 
@@ -10,7 +11,8 @@ html
     ul
       h3 base url: https://trek-dex.herokuapp.com/api/v1/characters
       h2 sample queries
-      li GET '/' -  get all characters 
+      li GET '/' -  get all characters
+      li GET '/paginated?page=*number*&limit=*number*' - get paginated characters 
       li GET '/name/*name here*' - get a character by name
       li GET '/filter?name=*name or partial name*' - get all matching characters
       li GET '/filter?origin=*origin or partial origin*' - get all matching characters
