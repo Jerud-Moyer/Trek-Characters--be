@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Roddenberry';
+  src: local('Roddenberry-DgLm'), url('../fonts/Roddenberry-DgLm.ttf') format('truetype')
+}
+
+:root {
+  --yellow: #f2c300;
+  --red: #df0000;
+  --blue: #0099f6;
+  --dark-blue: #114463;
+}
+
+body {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--blue);
+}
+
+h1 {
+  color: var(--red);
+  font-family: 'Roddenberry';
+  margin: -2px;
+  font-size: 3em;
+  text-shadow: var(--dark-blue) 2px 2px;
+}
+
+h2, h3 {
+  color: var(--yellow);
+  text-shadow: var(--dark-blue) 2px 2px;
+  font-size: 1.5em;
+}
+
+ul {
+  padding: 40px;
+  border: solid var(--blue) 10px;
+  border-radius: 20px;
+  box-shadow: var(--red) 3px 3px 3px 1px, inset var(--yellow) 3px 3px 3px 1px;
+
+}
+
+li {
+  list-style: circle;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--red);
+}
