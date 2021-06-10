@@ -1,9 +1,13 @@
 doctype html
 html
   head 
-    link(rel="preconnect" href="https://fonts.gstatic.com")
-    style(link href="https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap" rel="stylesheet")
+    style
       include ./style.css
+    style.
+      @font-face {
+      font-family: 'Roddenberry';
+      src: url('/fonts/Roddenberry-DgLm.ttf') format('truetype')
+      }
     title= title
   body 
     h1= title
